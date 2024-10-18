@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoFolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   @media screen and (max-width:768px){
+
+   }
+</style>
+<body>
+    <nav class="navcontainer">
+        <a id="nav-icon"href="index.html"><i class="bi bi-camera"></i></a>
+        <a id="nav-brand"href="index.html">PhotoFolio</a>
+       
+        <div class="navlinks">
+          <ul class="nav-lists">
+            <li><a  href="index.html">Home</a>
+            </li>
+            <li><a  href="about.html">About</a>
+            </li>
+            <li class="dropdown">
+                <a class="active" href="gallery.html">Gallery <i class="bi bi-caret-down-fill"></i></a>
+                <div class="dropdown-content">
+                  <ul>
+                    <li><a href="gallery.html">Nature</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Sports</a></li>
+                  </ul>
+                </div>
+              </li>
+            <li><a  href="services.html">Services</a>
+            </li>
+            <li><a  href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="social-icons">
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+        <div class="hamburger-menu">
+          <i class="bi bi-list"></i>
+        </div>
+      </nav>
+      <main>
+        <div class="container">
+            <div class="content">
+                <h1 class="page-header">Gallery</h1>
+                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas <br> consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint.<br> Sit quaerat ipsum dolorem.</p>
+                <button style="margin-top: 0; margin-left: 0;"><a href="contact.html">Available for hire</a></button>
+            </div>
+        </div>
+        <div class="nav2">
+            <nav>
+                <a href="index.html">Home</a>
+                <a class="active"  href="gallery.html">Gallery</a>
+            </nav>
+        </div>
+        <section class="gallery-section">
+          <div class="image">
+              <img src="images/nature.jfif" alt="Nature">
+          </div>
+          <div class="image">
+              <img src="images/blob.jfif" alt="Abstract Blob">
+          </div>
+          <div class="image">
+              <img src="images/heart-1192662_1280.jpg" alt="Heart">
+          </div>
+          <div class="image">
+              <img src="images/camera.jfif" alt="Camera">
+          </div>
+          <div class="image">
+              <img src="images/lake-7925872_640.jpg" alt="Lake">
+          </div>
+          <div class="image">
+              <img src="images/OIP (1).jfif" alt="Abstract Design">
+          </div>
+          <div class="image">
+              <img src="images/rose-8175830_640.webp" alt="Rose">
+          </div>
+          <div class="image">
+              <img src="images/squirrel-8536537_1280.jpg" alt="Squirrel">
+          </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+            <p style="font-size: 15px;">© Copyright PhotoFolio All Rights Reserved</p>
+            <div id="footer-icons">
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+            </div>
+            <p style="font-size: 15px;">Designed by <a id="link" style="color:green; text-decoration: none;" href="https://bootstrapmade.com/">bootstrapmade</a></p>
+        </div>      
+    </footer> 
+      </main>
+  <script>
+          document.querySelector('.hamburger-menu').addEventListener('click', function() {
+  document.querySelector('.nav-lists').classList.toggle('active'); 
+  document.querySelector('.social-icons').classList.toggle('active'); // Toggle visibility of social icons// Toggle visibility
+});
+  </script>    
+
+</body>
+</html>

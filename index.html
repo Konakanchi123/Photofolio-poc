@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoFolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .content-section{
+      color: rgb(227, 220, 211);
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .container{
+      text-align: center;
+     
+    }
+    .container h1{
+      font-size: 39px;
+      font-family:'Times New Roman', Times, serif;
+      margin:1px;
+    }
+    .container p{
+      font-size: 22px;
+    }
+/* Base styles (for large screens 1200px and above) */
+
+/* Medium devices (desktops, tablets) */
+@media (max-width: 1200px) {
+  .navcontainer {
+    height: 90px;
+  }
+
+  .gallery-section .image {
+    width: calc(33% - 20px); /* 3 columns for medium devices */
+  }
+
+  .container {
+    padding: 30px;
+    margin-top: 9%;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 12px 35px;
+    font-size: 12px;
+  }
+}
+
+/* Small devices (tablets and phones, 992px - 768px) */
+@media (max-width: 992px) {
+
+  .navcontainer {
+    height: 80px;
+  }
+  .hamburger-menu {
+        display: block;
+        cursor: pointer; 
+        font-size: 30px;
+        color: white; 
+        margin: 10px; 
+        z-index: 100; 
+    }
+
+  
+  .nav-lists {
+    flex-direction: column; /* Stack navigation links vertically */
+  }
+
+  .gallery-section .image {
+    width: calc(50% - 20px); /* 2 columns for smaller screens */
+  }
+
+  .container {
+    padding: 25px;
+    margin-top: 11%;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 30px;
+  }
+}
+
+
+
+/* Very small devices (phones in portrait mode, max-width: 576px) */
+@media (max-width: 576px) {
+  .hamburger-menu {
+        display: block;
+        cursor: pointer; 
+        font-size: 30px;
+        color: white; 
+        margin: 10px; 
+        z-index: 100; 
+    }
+    .nav-lists {
+        width: 100%; 
+    }
+    .social-icons.active{
+  display:flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+    .gallery-section .image {
+        width: calc(100% - 10px); /* 1 column on very small screens */
+    }
+
+    .container {
+        padding: 15px;
+        margin-top: 15%;
+    }
+
+    .page-header {
+        font-size: 35px;
+    }
+
+    .nav-lists {
+        flex-direction: column; /* Stack links vertically */
+        padding: 0; /* Remove padding */
+    }
+
+    button {
+        padding: 8px 20px;
+    }
+
+    .scroll-to-top {
+        font-size: 35px;
+    }
+    .social-icons{
+      display: none;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+    <nav class="navcontainer">
+      <a id="nav-icon"href="index.html"><i class="bi bi-camera"></i></a>
+      <a id="nav-brand"href="index.html">PhotoFolio</a>
+     
+      <div class="navlinks">
+        <ul class="nav-lists">
+          <li><a class="active" href="index.html">Home</a>
+          </li>
+          <li><a  href="about.html">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="gallery.html">Gallery <i class="bi bi-caret-down-fill"></i></a>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="gallery.html">Nature</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Architecture</a></li>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Sports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a  href="services.html">Services</a>
+          </li>
+          <li><a  href="contact.html">Contact</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="hamburger-menu">
+        <i class="bi bi-list"></i>
+    </div>
+    <div class="social-icons">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
+    </nav>
+    <main>
+      <section class="content-section">
+        <div class="container">
+          <h1>I'm <span class="name">Vasavi</span>, a<br> Professional Photographer<br> from New York City</h1>
+          <p>
+            Blanditiis praesentium aliquam illum tempore incidunt debitis
+            dolorem magni <br>est deserunt sed qui libero. Qui voluptas amet.
+          </p>
+          <button><a href="contact.html">Available for hire</a></button>
+        </div>
+      </section>
+      <section class="gallery-section">
+        <div class="image">
+            <img src="images/nature.jfif" alt="Nature">
+        </div>
+        <div class="image">
+            <img src="images/blob.jfif" alt="Abstract Blob">
+        </div>
+        <div class="image">
+            <img src="images/heart-1192662_1280.jpg" alt="Heart">
+        </div>
+        <div class="image">
+            <img src="images/camera.jfif" alt="Camera">
+        </div>
+        <div class="image">
+            <img src="images/lake-7925872_640.jpg" alt="Lake">
+        </div>
+        <div class="image">
+            <img src="images/OIP (1).jfif" alt="Abstract Design">
+        </div>
+        <div class="image">
+            <img src="images/rose-8175830_640.webp" alt="Rose">
+        </div>
+        <div class="image">
+            <img src="images/squirrel-8536537_1280.jpg" alt="Squirrel">
+        </div>
+    </section>
+    </main>
+<footer>
+  <div class="footer-container">
+    <p style="font-size: 15px;">© Copyright PhotoFolio All Rights Reserved</p>
+    <div id="footer-icons">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
+        <p style="font-size: 15px;">Designed by <a id="link" style="color:green; text-decoration: none;" href="https://bootstrapmade.com/">bootstrapmade</a></p>
+        <a href="#top" class="scroll-to-top">
+          <i class="bi bi-arrow-up-circle-fill"></i>
+      </a>
+  </div>
+</footer>
+<script> 
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+  document.querySelector('.nav-lists').classList.toggle('active'); 
+  document.querySelector('.social-icons').classList.toggle('active'); // Toggle visibility of social icons// Toggle visibility
+});
+</script>  
+
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+body {
+    background-color: black;
+   height: 100vh;;
+ 
+    position: relative;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100px; 
+    position: fixed;
+   z-index: 1000;
+    background-color: black; /* Ensures the navbar has a background color */
+}
+
+
+#nav-icon {
+    color: rgb(84, 211, 84);
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+#nav-brand {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 32px;
+}
+.container {
+    color: white;
+    padding: 40px;
+    margin-top: 7%;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .page-header {
+    margin-left: 10px;
+      font-family: serif;
+      font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+  .content p{
+      font-size: 20px;
+  }
+  .nav2{
+      margin-top:5%;
+    
+      background-color: rgb(18, 17, 17);
+      padding: 20px 30px;
+  }
+  .nav2 nav a {
+      color: rgb(41, 217, 109);
+      text-decoration: none;
+     padding-left: 20px;
+     font-size: 20px;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 500;
+  }
+  .nav2 nav a.active { 
+    color: antiquewhite !important;
+}
+  .nav2 nav{
+      margin-left: 10%;
+      padding-left:20px;
+  }
+.navlinks {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.name {
+    position: relative;
+    z-index: 1;
+    padding:0 5px;
+    display:inline-block;
+}
+
+.name::before {
+    content: " ";
+    position: absolute;
+    bottom:20%;
+    background-color: #27a776;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+}
+
+.nav-lists {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-lists li {
+    margin: 15px;
+}
+
+.nav-lists li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-lists li a:hover {color: aqua;}
+.active{color: rgb(128, 189, 229) !important;}
+.social-icons {
+    display: flex;
+    gap: 10px; 
+  margin-right: 29px;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding-left:2px;
+}
+.social-icons i:hover{
+    color: aqua;
+}
+.hamburger-menu {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+} 
+button{
+    background-color: #27a776;
+    margin-top:10px;
+    padding:14px 45px;
+    font-size: 13px;
+    color: beige;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  button a{
+    text-decoration: none;
+    color: beige;
+  }
+  .gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4%;
+    gap: 10px; /* Adjust spacing between images */
+}
+
+.gallery-section .image {
+    width: calc(25% - 20px); 
+}
+
+.gallery-section .image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover; 
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-section .image img:hover {
+    transform: scale(1.02);
+}
+footer {
+    background-color: rgb(18, 17, 17);
+    margin-top: 50px;
+    margin-bottom: -20px;
+    width: 100%;
+   
+    color: beige;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+#footer-icons {
+    display: flex;
+    gap: 15px; 
+}
+
+#footer-icons i {
+    font-size: 20px;
+    padding: 8px; 
+    border: 1px solid white; 
+    border-radius: 60%; 
+    color: rgb(35, 107, 110);
+    transition: background-color 0.3s ease;
+}
+
+#footer-icons i:hover {
+    cursor: pointer;
+    background-color: #27a776; 
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: absolute;
+    margin-bottom:0px;
+    padding-top: 90px;
+    right: 20px;
+    font-size: 40px;
+    color: #27a776; /* Green color */
+    text-decoration: none; 
+    border-radius: 100%;
+}
+
+.scroll-to-top:hover {
+    color: #1f8a5a; /* Darker green on hover */
+    
+}
+/* Dropdown container */
+.navcontainer .dropdown {
+    position: relative;
+  }
+  
+  /* Hide dropdown content initially */
+  .navcontainer .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Adjust background to match nav style */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Show dropdown content on hover */
+  .navcontainer .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Dropdown content links */
+  .dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dropdown-content li {
+    padding: 12px 16px;
+  }
+  
+  .dropdown-content li a {
+    text-decoration: none;
+    color: white; 
+    display: block;
+  }
+  
+  /* Add hover effect on dropdown items */
+  .dropdown-content li a:hover {
+    background-color: rgba(41, 217, 109, 0.8); /* Green hover effect */
+  }
+  @media (max-width: 768px) {
+    .navcontainer {
+        display:flex;
+        height: auto;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer; 
+        font-size: 30px;
+        color: white; 
+        margin: 10px; 
+        z-index: 100; 
+    }
+
+    .nav-lists {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+       
+    }
+.social-icons{
+    display: none;
+}
+    .nav-lists.active {
+        display: flex; 
+    }
+.social-icons.active{
+  display:flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.container {
+    padding: 20px;
+    margin-top: 13%;
+}
+
+.page-header {
+    font-size: 50px;
+}
+.content p{
+    font-size: 17px;
+}
+
+
+
+.nav2{
+   
+    padding: 20px 40px;
+}
+button {
+    padding: 14px 43px;
+}
+ .gallery-section .image {
+        width: calc(50% - 20px); 
+        margin:4px;
+        
+    }
+
+  }
