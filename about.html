@@ -1,391 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - PhotoFolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link
-rel="stylesheet" href="
-https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - PhotoFolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <style>
-.containers {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
-}
+  .containers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
 
-.leftcontainer {
-  width: 50%; 
-  margin-right: 30px;
-}
+  .leftcontainer {
+    width: 50%;
+    margin-right: 30px;
+  }
 
-.leftcontainer img {
-  width: 75%; 
-  height: 608px;
-  object-fit: cover;
-  margin-left: 40%;
-}
+  .leftcontainer img {
+    width: 75%;
+    height: 608px;
+    object-fit: cover;
+    margin-left: 40%;
+  }
 
-.rightcontainer {
-  width: 70%; 
-  color: #dedede;
-  margin-right: 120px;
-  margin-left: 70px;
-}
+  .rightcontainer {
+    width: 70%;
+    color: #dedede;
+    margin-right: 120px;
+    margin-left: 70px;
+  }
 
-.rightcontainer h3 {
-  font-size: 30px;
-  margin-top: 0;
-  padding: 8px 10px;
-}
+  .rightcontainer h3 {
+    font-size: 30px;
+    margin-top: 0;
+    padding: 8px 10px;
+  }
 
-.rightcontainer p {
-  margin-top: 20px;
-  font-size: 18px;
-}
+  .rightcontainer p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
 
-.details {
-  display: flex;
-  justify-content: space-between;
-}
+  .details {
+    display: flex;
+    justify-content: space-between;
+  }
 
-#para {
-  font-size: 17px;
-}
-.testimonials {
-  color: #fff;
-  margin-top: 100px;
-  
-}
-.section-title{
-  margin-left:10%;
-}
- .section-title h2 {
-  font-size: 12px;
-  padding: 0;
-  letter-spacing: 1.5px;
-  line-height: 1px;
-  text-transform: uppercase;
-}
-.testimonials .section-title h2::after{
-  content: "";
-  width:120px;
-  height:1px;
-  display:inline-block;
-  background: #07ff17;
-  margin:4px 10px;
+  #para {
+    font-size: 17px;
+  }
 
-}
-.testimonials .section-title p {
-  margin:0;
-  font-size: 35px;
-}
+  .testimonials {
+    color: #fff;
+    margin-top: 100px;
 
-.testimonial-container {
-  margin: 3%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 20px;
-  color: beige;
-}
+  }
 
-.card {
-  border: 1px solid #080808;
-  border-radius: 4px;
-  padding: 20px;
-  max-width: 20%;
-  text-align: center;
-  transition: transform 0.2s ease; 
-  background-color: #555;
-  
-}
+  .section-title {
+    margin-left: 10%;
+  }
 
-.card:hover {
-  transform: scale(1.02);
-  margin-bottom: 5%;
-}
-.stars {
-  color: gold;
-  font-size: 20px;
-}
+  .section-title h2 {
+    font-size: 12px;
+    padding: 0;
+    letter-spacing: 1.5px;
+    line-height: 1px;
+    text-transform: uppercase;
+  }
 
-.card p {
-  font-style: italic;
-  color: beige;
-}
+  .testimonials .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #07ff17;
+    margin: 4px 10px;
 
-.card img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-top: 10px;
-}
+  }
 
-.card h3 {
-  margin-top: 15px;
-  font-size: 1.2em;
-}
+  .testimonials .section-title p {
+    margin: 0;
+    font-size: 35px;
+  }
 
-.card h4 {
-  color: gray;
-  font-size: 1em;
-  font-weight: normal;
-}
+  .testimonial-container {
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    color: beige;
+  }
+
+  .card {
+    border: 1px solid #080808;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 20%;
+    text-align: center;
+    transition: transform 0.2s ease;
+    background-color: rgb(18, 17, 17);
+
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+    margin-bottom: 2%;
+  }
+
+  .stars {
+    color: gold;
+    font-size: 20px;
+  }
+
+  .card p {
+    font-style: italic;
+    color: beige;
+  }
+
+  .card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  .card h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+
+  .card h4 {
+    color: gray;
+    font-size: 1em;
+    font-weight: normal;
+  }
 
 
-@media screen and (max-width:768px){
- .content h1 {
-   margin-bottom: 1px;
-     font-size: 4rem;    
- }
- .content p{
-   font-size: 18px;
- }
- /* Stacking containers for small screens */
- .containers {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
- 
- /* Adjust left container width and image scaling */
- .leftcontainer {
-     width: auto; 
-    
- }
- .button{font-size: 15px;}
- .leftcontainer img {
-   
-     /* height: 600px; */
-     object-fit: cover;
-     margin-left:10%; 
- }
+  @media screen and (max-width:768px) {
+    .content h1 {
+      margin-bottom: 1px;
+      font-size: 4rem;
+    }
 
- .rightcontainer {
-     width: 100%; 
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: flex-start;
- }
- 
- .rightcontainer h3 {
-     font-size: 30px;
-     margin-left: 12%;
- }
- 
- .rightcontainer p {
-     font-size: 16px;
-     margin-top: 10px;
-     margin-left: 12%;
-    
- }
- .details{
-   display: flex;
-   flex-direction: column;
-   margin-left: 10%;
-   align-items: self-start;
- }
- #para {
-     font-size: 17px;
- }
- #last-para{
-  font-size: 16px;
- }
- .testimonial-container {
-  height: 2%;
-  flex-direction: row;
+    .content p {
+      font-size: 18px;
+    }
+
+    .containers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .leftcontainer {
+      width: auto;
+
+    }
+
+    .button {
+      font-size: 15px;
+    }
+
+    .leftcontainer img {
+
+      object-fit: cover;
+      margin-left: 10%;
+    }
+
+    .rightcontainer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .rightcontainer h3 {
+      font-size: 30px;
+      margin-left: 12%;
+    }
+
+    .rightcontainer p {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-left: 12%;
+
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+      align-items: self-start;
+    }
+
+    #para {
+      font-size: 17px;
+    }
+
+    #last-para {
+      font-size: 16px;
+    }
+
+    .testimonial-container {
+      height: 2%;
+      flex-direction: row;
     }
 
     .card {
-     
-        width: 100%;
-        margin: 0;
+
+      width: 100%;
+      margin: 0;
     }
-}
+  }
 </style>
+
 <body>
-    <nav class="navcontainer">
-        <a id="nav-icon" href="index.html"><i class="bi bi-camera"></i></a>
-        <a id="nav-brand" href="index.html">PhotoFolio</a>
-        
-        <div class="navlinks">
-            <ul class="nav-lists">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="gallery.html">Gallery <i class="bi bi-caret-down-fill"></i></a>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li><a href="gallery.html">Nature</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Architecture</a></li>
-                            <li><a href="#">Animals</a></li>
-                            <li><a href="#">Sports</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+  <nav class="navcontainer">
+    <a id="nav-icon" href="index.html"><i class="bi bi-camera"></i></a>
+    <a id="nav-brand" href="index.html">PhotoFolio</a>
+
+    <div class="navlinks">
+      <ul class="nav-lists">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="gallery.html">Gallery <i class="bi bi-caret-down-fill"></i></a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="gallery.html">Nature</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Architecture</a></li>
+              <li><a href="#">Animals</a></li>
+              <li><a href="#">Sports</a></li>
             </ul>
-        </div>
-        <div class="hamburger-menu">
-          <i class="bi bi-list"></i>
-      </div>
-        <div class="social-icons">
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i>
-        </div>
-    </nav>
-     
-    <main>
-        <div class="container">
-            <div class="content">
-                <h1 class="page-header">About</h1>
-                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas<br> consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint.<br> Sit quaerat ipsum dolorem.</p>
-                <button><a href="contact.html">Available for hire</a></button>
-            </div>
-        </div>
-        <div class="nav2">
-            <nav>
-                <a href="index.html">Home</a>
-                <a class="active" href="about.html">About</a>
-            </nav>
-        </div>
-        <div class="containers">
-            <div class="leftcontainer">
-                <img src="/images/camera.jfif" alt="Camera">
-            </div>
-            <div class="rightcontainer">
-                <h3>UI/UX Designer & Professional Photographer <br> from New York</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br> et dolore magna aliqua.</p>
-                <div class="details">
-                    <div class="left">
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Birthday:</strong> 1 May 1995</p>
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Website:</strong> www.example.com</p>
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Phone:</strong> +123 456 7890</p>
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>City:</strong> New York, USA</p>
-                    </div>
-                    <div class="right" style="margin-right: 20%;">
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Age:</strong> 30</p>
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Degree:</strong> Master</p>
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Email:</strong> email@example.com</p>
-                        <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Freelance:</strong> Available</p>
-                    </div>
-                </div>
-                <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio <br>vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium<br> dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta<br> maxime officiis quidem quia. Sed et consectetur qui quia <br>repellendus itaque neque. Aliquid amet quidem ut quaerat <br>cupiditate. Ab et eum qui repellendus omnis culpa magni<br> laudantium dolores.
-                </p>
-                <p id="last-para" style="margin-top: 30px;">
-                  Recusandae est praesentium consequatur eos voluptatem.<br> Vitae dolores aliquam itaque odio nihil. Neque ut neque ut quae<br> voluptas. Maxime corporis aut ut ipsum consequatur.<br> Repudiandae sunt sequi minus qui et. Doloribus molestiae <br>officiis. Soluta eligendi fugiat omnis enim. Numquam alias sint<br> possimus eveniet ad. Ratione in earum eum magni totam.
-                </p>
-            </div>
-        </div>
-        <section class="testimonials">
-            <div class="section-title">
-              <h2>Testimonials </h2>
-              <p>What they are saying</p>
-            </div>
-        
-           
-              <div class="testimonial-container">
-                <div class="card">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos except minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam."
-                  </p>
-                  <img src="images/img1.jpg" alt="Matt Brandon">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              
-                <div class="card">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
-                  </p>
-                  <img src="images/img2.jpg" alt="John Larson">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-
-                
-               <div class="card">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
-                  </p>
-                  <img src="images/img3.jpg" alt="John Larson">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              
-              
-                <div class="card">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
-                  </p>
-                  <img src="images/squirrel-8536537_1280.jpg" alt="Saul Goodman">
-                  <h3>Saul Goodman</h3>
-                  <h4>CEO & Founder</h4>
-                </div>
-              </div>
-              
-            </div>
-        </section>
-    </main>
-
-    <footer>
-      <div class="footer-container">
-          <p style="font-size: 15px;">© Copyright PhotoFolio All Rights Reserved</p>
-          <div id="footer-icons">
-              <i class="bi bi-twitter-x"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-linkedin"></i>
           </div>
-          <p style="font-size: 15px;">Designed by <a id="link" style="color:green; text-decoration: none;" href="https://bootstrapmade.com/">bootstrapmade</a></p>
-      </div>      
-  </footer> 
-   
-    <script>
-      document.querySelector('.hamburger-menu').addEventListener('click', function() {
-  document.querySelector('.nav-lists').classList.toggle('active'); 
-  document.querySelector('.social-icons').classList.toggle('active'); // Toggle visibility of social icons// Toggle visibility
-});
-    </script>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hamburger-menu">
+      <i class="bi bi-list"></i>
+    </div>
+    <div class="social-icons">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="content">
+        <h1 class="page-header">About</h1>
+        <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas<br> consequatur ut a
+          odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint.<br> Sit quaerat ipsum
+          dolorem.</p>
+        <button><a href="contact.html">Available for hire</a></button>
+      </div>
+    </div>
+    <div class="nav2">
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+      </nav>
+    </div>
+    <div class="containers">
+      <div class="leftcontainer">
+        <img src="/images/camera.jfif" alt="Camera">
+      </div>
+      <div class="rightcontainer">
+        <h3>UI/UX Designer & Professional Photographer <br> from New York</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br> et
+          dolore magna aliqua.</p>
+        <div class="details">
+          <div class="left">
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Birthday:</strong>
+              1 May 1995</p>
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Website:</strong>
+              www.example.com</p>
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Phone:</strong>
+              +123 456 7890</p>
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>City:</strong> New
+              York, USA</p>
+          </div>
+          <div class="right" style="margin-right: 20%;">
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Age:</strong> 30
+            </p>
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Degree:</strong>
+              Master</p>
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i> <strong>Email:</strong>
+              email@example.com</p>
+            <p id="para"><i class="bi bi-chevron-right" style="color: rgb(37, 204, 90);"></i>
+              <strong>Freelance:</strong> Available</p>
+          </div>
+        </div>
+        <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio <br>vero. Quisquam sunt adipisci omnis et
+          ut. Nulla accusantium<br> dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta<br> maxime
+          officiis quidem quia. Sed et consectetur qui quia <br>repellendus itaque neque. Aliquid amet quidem ut quaerat
+          <br>cupiditate. Ab et eum qui repellendus omnis culpa magni<br> laudantium dolores.
+        </p>
+        <p id="last-para" style="margin-top: 30px;">
+          Recusandae est praesentium consequatur eos voluptatem.<br> Vitae dolores aliquam itaque odio nihil. Neque ut
+          neque ut quae<br> voluptas. Maxime corporis aut ut ipsum consequatur.<br> Repudiandae sunt sequi minus qui et.
+          Doloribus molestiae <br>officiis. Soluta eligendi fugiat omnis enim. Numquam alias sint<br> possimus eveniet
+          ad. Ratione in earum eum magni totam.
+        </p>
+      </div>
+    </div>
+    <section class="testimonials">
+      <div class="section-title">
+        <h2>Testimonials </h2>
+        <p>What they are saying</p>
+      </div>
+
+
+      <div class="testimonial-container">
+        <div class="card">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p>
+            "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos except minim fugiat minim velit minim
+            dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam."
+          </p>
+          <img src="images/img1.jpg" alt="Matt Brandon">
+          <h3>Matt Brandon</h3>
+          <h4>Freelancer</h4>
+        </div>
+
+        <div class="card">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p>
+            "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+            labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+          </p>
+          <img src="images/img2.jpg" alt="John Larson">
+          <h3>John Larson</h3>
+          <h4>Entrepreneur</h4>
+        </div>
+
+
+        <div class="card">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p>
+            "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+            labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+          </p>
+          <img src="images/img3.jpg" alt="John Larson">
+          <h3>John Larson</h3>
+          <h4>Entrepreneur</h4>
+        </div>
+
+
+        <div class="card">
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <p>
+            "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+            quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
+          </p>
+          <img src="images/squirrel-8536537_1280.jpg" alt="Saul Goodman">
+          <h3>Saul Goodman</h3>
+          <h4>CEO & Founder</h4>
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p style="font-size: 15px;">© Copyright PhotoFolio All Rights Reserved</p>
+      <div id="footer-icons">
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+      <p style="font-size: 15px;">Designed by <a id="link" style="color:green; text-decoration: none;"
+          href="https://bootstrapmade.com/">bootstrapmade</a></p>
+      <a href="#top" class="scroll-to-top">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function () {
+      document.querySelector('.nav-lists').classList.toggle('active');
+      document.querySelector('.social-icons').classList.toggle('active');
+    });
+  </script>
 </body>
+
 </html>
